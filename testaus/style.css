@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #333;
+  color: white;
+  font-size: 10px;
+}
+
+.container {
+  border: 1px solid #333; /* Just to see the container size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.container h1 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.container p {
+  font-size: 2rem;
+}
+
+button {
+  color: white;
+  padding: 1rem;
+  background-color: #330;
+  border: 0.5px solid;
+  border-radius: 5px;
+  margin: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
