@@ -27,6 +27,10 @@ body {
   height: 90%;
 }
 
+i {
+  margin: 1rem;
+}
+
 /* Navigation */
 nav {
   position: sticky;
@@ -71,12 +75,15 @@ a:hover {
 
 .btn-1 {
   color: #fff;
-  background-color: #335;
+  background-color: rgb(161, 50, 16);
   padding: 0.8rem;
   margin: 0.5rem;
   outline: none;
   cursor: pointer;
+  border-radius: 2px;
+  border: none;
   font-family: inherit;
+
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -87,6 +94,10 @@ a:hover {
 
 button:hover {
   opacity: 0.8;
+}
+
+#img {
+  width: 500px;
 }
 
 /* Forms */
