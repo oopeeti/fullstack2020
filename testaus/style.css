@@ -63,6 +63,10 @@ a:hover {
   font-size: 1.5rem;
 }
 
+.link-text:hover {
+  border-bottom: 1px solid #fff;
+}
+
 /* UI-elements */
 .container h1, p {
   padding: 1rem;
@@ -88,7 +92,9 @@ a:hover {
   0 22.3px 17.9px rgba(0, 0, 0, 0.072);
 }
 
-button:hover {opacity: 0.8;}
+button:hover {
+  opacity: 0.9;
+}
 
 #img {width: 500px;}
 
