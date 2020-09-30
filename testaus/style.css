@@ -69,9 +69,7 @@ a:hover {
   font-size: 3rem;
 }
 
-.container p {
-  font-size: 2rem;
-}
+.container p {font-size: 2rem;}
 
 .btn-1 {
   color: #fff;
@@ -83,22 +81,16 @@ a:hover {
   border-radius: 2px;
   border: none;
   font-family: inherit;
-
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072)
-;
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072);
 }
 
-button:hover {
-  opacity: 0.8;
-}
+button:hover {opacity: 0.8;}
 
-#img {
-  width: 500px;
-}
+#img {width: 500px;}
 
 /* Forms */
 
