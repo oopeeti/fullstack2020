@@ -9,7 +9,7 @@
 body,
 html {
   background: rgb(25, 26, 25);
-  color: rgb(209, 216, 209);
+  color: rgb(238, 229, 229);
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
   overflow: auto;
@@ -20,9 +20,17 @@ body {
   width: 100vw;
 }
 
-/* BASIC ELEMENTS */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  border-bottom: 2px solid #fff;
   margin: 1rem;
 }
 
@@ -37,8 +45,16 @@ p {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: rgba(177, 140, 140, 0.438);
   cursor: pointer;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
 }
 
 a:hover {
@@ -46,35 +62,46 @@ a:hover {
   transition: 0.1s ease-in;
 }
 
-.btn {
-  cursor: pointer;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  outline: none;
+.buttons {
+  text-align: center;
+}
+
+button {
   border: none;
-  box-shadow: 0px 0px 52px -10px rgba(0,0,0,0.47);
+  border-radius: 3px;
+  font: inherit;
+  font-size: 1.1rem;
+  line-height: 1;
+  margin: 2rem 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  box-shadow: 0px 3px 4px 1px;
+  font-weight: 600;
+  background-color: #8fc866;
+  outline: none;
+}
+
+/* Button effects */
+.down:hover,
+.down:focus {
+  box-shadow: 0px 2px 1px 1px;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(1px);
+  background-color: #7daf5a;
+
 }
 
 .nimi {
-  color: #fff;
+  color: rgb(238, 229, 229);
   font-weight: bold;
-  font-style: unset;
+  font-style: inherit;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  align-items: center;
-}
 
 
 /* CONTENT */
 
-/* NAV */
+/* Navigation */
 #navigation {
   /* background-color: #23d1c0; */
   display: flex;
@@ -112,10 +139,10 @@ a:hover {
 }
 
 .active {
-  color: #fff;
+  color: rgb(238, 229, 229);;
 }
 
-/* MAIN AREA */
+/* Main-area */
 .main-area {
   display: flex;
   flex-direction: column;
@@ -126,29 +153,6 @@ a:hover {
   max-width: 85%;
   
 }
-/* FOOTER */
-#footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 15px;
-  font-size: 1.5rem;
-  /* border: 1px solid blue; */
-  margin: 1rem;
-  opacity: 0.5;
-}
-
-/* Fontawesome */
-.icon-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon {
-  font-size: 25px;
-}
-
 /* PAGE SPECIFIC */
 
 /* Harjoitukset */
@@ -172,7 +176,51 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0px 0px 20px -2px #00000078;
   margin: 10px;
-  min-width: 20vw;
-  min-height: 10vw;
+  width: 20vw;
+  height: 15vw;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 6.10.2020 */
+.harjoitus #vastaus {
+  margin-bottom: 1rem;
+  color: #8fc866;
+}
+
+#lasku1,
+#lasku2 {
+  font-size: 1.5rem;
+}
+
+/* FOOTER */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  font-size: 1.5rem;
+  /* border: 1px solid blue; */
+  margin: 1rem;
+  opacity: 0.5;
+}
+
+/* Fontawesome */
+.icon-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+
+
 
