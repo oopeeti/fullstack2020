@@ -3,7 +3,7 @@ const colorBtn = document.getElementById("color-btn");
 const paraBtn = document.getElementById("para-btn");
 const harjTeksti = document.getElementById("alateksti");
 const divBtn = document.getElementById("div-btn");
-const divTxt = document.getElementById("teksti");
+const divTxt = document.getElementById("alateksti");
 const resetBtn = document.getElementById("reset-btn");
 
 colorBtn.addEventListener("click", () => {
@@ -35,7 +35,7 @@ const lasku2 = document.getElementById("lasku2-input"); // lasku 2 input
 const addBtn = document.getElementById("add-btn"); // + nappi
 const subBtn = document.getElementById("sub-btn"); // - nappi
 const divideBtn = document.getElementById("divide-btn"); // nappi
-const multiplyBtn = document.getElementById("multiply-btn"); // * nappi
+const multiplyBtn = document.getElementById("multiply-btn"); // * nappi 
 
 addBtn.addEventListener("click", () => {
   const num1 = parseInt(lasku1.value);
