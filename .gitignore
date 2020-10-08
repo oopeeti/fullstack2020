@@ -16,4 +16,13 @@
 ### Git ###
 .git
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+# DW Dreamweaver added files
+_notes/
+_notes
+_compareTemp
+configs/
+dwsync.xml
+dw_php_codehinting.config
+*.mno
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode #
