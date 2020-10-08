@@ -121,11 +121,15 @@ button {
 
 .link-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
 }
 
 .link-list-item {
   font-size: 1.7rem;
-  padding: 2rem 2rem 0rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -165,8 +169,9 @@ button {
 
 /* Harjoitukset */
 .harjoitukset {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -206,6 +211,11 @@ button {
 #lasku1,
 #lasku2 {
   font-size: 1.5rem;
+}
+
+/* 7.10.2020 */
+.mittatilaustyö-link {
+  font-size: 3rem;
 }
 
 /* FOOTER */
