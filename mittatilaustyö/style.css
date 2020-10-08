@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+}
+
+/* Layout */
+body,html {
+	color: azure;
+	background-color: #333;
+	font-size: 10px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+}
+
+.container {
+	outline: 4px solid #272727;
+	width: 968px;
+	/*padding: 1rem;*/
+}
+
+/* Basic Elements */
+
+ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: azure;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+a:hover {
+	opacity: 0.9;
+	border-bottom: 1px solid white;
+}
+
+/* Utility Classes */
+
+.white-text {
+	color: #azure;
+	text-shadow: 3px 3px 5px black;
+}
+
+.active {
+	border-bottom: 1px solid white;
+}
+
+.side-outlines {
+	outline: 1px ridge #222222;
+}
+
+.bottom-border {
+	border-bottom: 1px solid azure;
+}
+
+.small {
+	font-size: 1rem;
+}
+
+.medium {
+	font-size: 1.6rem;
+}
+
+.dim {
+	opacity: 0.7;
+}
+
+.margins-top-bottom {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.reset {
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation */
+#main-nav {
+	margin: 1rem;
+}
+
+.link-list-item {
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+}
+
+/* Header */
+.header {
+	height: 377px;
+}
+
+
+.hero-image {
+	background-image: url("../img/city.jpg");
+	background-color: #cccccc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	height: 100%;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#hero-image-text {
+	display: flex;
+	flex-direction: column;
+	font-size: 3rem;
+}
+
+.middle {
+	flex: 1;
+	display: flex;
+}
+
+.top {
+	flex: 1;
+	justify-content: flex-start;
+}
+
+/* Content */
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+.section {
+	width: 100%;
+	text-align: center;
+}
+
+.section img {
+	width: 100%;
+	height: 100%;
+}
+
+.section p {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	padding: 2rem;
+}
+
+#future,
+#vision,
+#crypto {
+	height: 200px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+}
+
+#future {
+	background: url("../img/space.jpg") center no-repeat;
+}
+
+#vision {
+	background: url("../img/city-2.jpg") center no-repeat;
+
+}
+
+#crypto {
+	background: url("../img/ethereum.jpg") center no-repeat;
+
+}
+
+#paluu-linkki {
+	opacity: 0.2;
+}
+
+#paluu-linkki:hover {
+	border-bottom: none;
+	color: #C4C4C4;
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+}
+
+#footer p {
+	opacity: 0.2;
+}
+
+/*Footer*/
+
+#footer {
+	/*border: 2px solid red;*/	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	font-size: 1.2rem;
+	margin: 1rem;
+	font-style: italic;
+	font-family: inherit;
+}
