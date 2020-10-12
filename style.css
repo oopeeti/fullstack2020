@@ -85,8 +85,7 @@ button {
 }
 
 /* Button effects */
-.down:hover,
-.down:focus {
+.down:hover {
   box-shadow: 0px 2px 1px 1px;
   transition: all 0.2s ease-in-out;
   transform: translateY(1px);
@@ -99,9 +98,7 @@ button {
   font-style: inherit;
 }
 
-/* CONTENT */
-
-/* Navigation */
+/********************* NAVIGATION *************************/
 #navigation {
   display: flex;
   flex-direction: column;
@@ -154,7 +151,9 @@ button {
   color: #8fc866;
 }
 
-/* Main-area */
+/********************* NAVIGATION LOPETUS *************************/
+
+/********************* ETUSIVU *************************/
 .main-area {
   display: flex;
   flex-direction: column;
@@ -165,9 +164,10 @@ button {
   
 }
 
-/* PAGE SPECIFIC */
+/********************* ETUSIVU LOPETUS *************************/
 
-/* Harjoitukset */
+
+/********************* HARJOITUSKORTIT *************************/
 .harjoitukset {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -201,8 +201,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+/********************* HARJOITUSKORTIT LOPETUS *************************/
+
+/********************* TEHTÄVÄT *************************/
 
 /* 6.10.2020 */
+/* LASKURI */
 .harjoitus #vastaus {
   margin-bottom: 1rem;
   color: #8fc866;
@@ -212,13 +216,49 @@ button {
 #lasku2 {
   font-size: 1.5rem;
 }
+/********************* LASKURI LOPETUS *************************/
 
 /* 7.10.2020 */
+/* MITTATILAUSTYÖ */
 .mittatilaustyö-link {
   font-size: 3rem;
 }
 
-/* FOOTER */
+
+.icon {
+  font-size: 25px;
+}
+
+/********************* MITTATILAUSTYÖ LOPETUS *************************/
+
+/* 9.10.2020 */
+/* LÄMPÖMITTARI */
+.slider {
+  width: 50rem;
+}
+
+#heat-div {
+  height: 15rem;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all ease-in;
+}
+/********************* LÄMPÖMITTARI LOPETUS *************************/
+
+/* 12.10.2020 */
+/* NOPPAPELI */
+.noppa {
+  width: 7.5rem;
+  margin: 1rem;
+}
+/********************* NOPPAPELI LOPETUS *************************/
+
+/********************* FOOTER *************************/
 #footer {
   text-align: center;
   font-size: 2rem;
@@ -230,6 +270,8 @@ button {
   margin-left: 3px;
   font-style: italic;
 }
+/********************* FOOTER LOPETUS *************************/
+
 /* Fontawesome */
 .icon-links {
   display: flex;
@@ -237,37 +279,33 @@ button {
   align-items: center;
 }
 
-.icon {
-  font-size: 25px;
-}
-
-/* MEDIA QUERIES */
+/********************* MEDIA QUERIES *************************/
 
 /* WIDTH */
 @media only screen and (max-width: 450px) {
   h1 {
     font-size: 2.5rem;
   }
-
+  
   button {
     margin: 1rem 0.5rem;
     padding: 1.5rem 2rem;
   }
-
+  
   input {
     margin: 0.5rem;
     padding: 5px;
   }
-
+  
   .shortcut-link {
     padding: 1rem;
   }
-
+  
   #navigation {
     width: 90%;
   }
-
-
+  
+  
   .harjoitus {
     margin: 0rem 0.5rem;
   }
@@ -413,7 +451,7 @@ button {
     margin-bottom: 4rem;
   }
 }
-
+/********************* MEDIA QUERIES LOPETUS *************************/
 
 
 
