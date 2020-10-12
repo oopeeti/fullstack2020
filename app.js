@@ -27,7 +27,7 @@ resetBtn.addEventListener("click", () => {
   harjTeksti.style.color = "";
   divTxt.style.backgroundColor = "";
 });
-/*********************PÄIVÄMÄÄRÄ LOPETUS*************************/
+/*********************PAIVAMAARA LOPETUS*************************/
 
 // 6.10.2020 - Laskut
 const vastaus = document.getElementById("vastaus");
@@ -63,7 +63,7 @@ multiplyBtn.addEventListener("click", () => {
 });
 /*********************LASKURI LOPETUS*************************/
 
-// 9.10.2020 - Lämpömittari
+// 9.10.2020 - Lampomittari
 const lampomittari = document.getElementById("lampomittari");
 const testibuttoni = document.getElementById("testi");
 const lampoVari = document.getElementById("heat-div");
@@ -85,7 +85,7 @@ lampomittari.addEventListener("input", () => {
     lampoVari.style.backgroundColor = "rgb(139,0,0)";
   } else if (lampo > 75) {
     lampoVari.style.backgroundColor = "rgb(255,0,0)";
-    // Kylmä
+    // Kylma
   } else if (lampo < 0 && lampo > -25) {
     lampoVari.style.backgroundColor = "rgb(176,224,230)";
   } else if (lampo < 25 && lampo > -50) {
@@ -96,7 +96,7 @@ lampomittari.addEventListener("input", () => {
     lampoVari.style.backgroundColor = "rgb(70,130,180)";
   }
 });
-/*********************LÄMPÖMITTARI LOPETUS*************************/
+/*********************LAMPOMITTARI LOPETUS*************************/
 
 // 12.10.2020 - Noppa
 const diceBtn = document.getElementById("roll-the-dice");

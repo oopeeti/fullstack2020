@@ -203,7 +203,7 @@ button {
 }
 /********************* HARJOITUSKORTIT LOPETUS *************************/
 
-/********************* TEHTÄVÄT *************************/
+/********************* TEHTAVAT *************************/
 
 /* 6.10.2020 */
 /* LASKURI */
@@ -219,8 +219,8 @@ button {
 /********************* LASKURI LOPETUS *************************/
 
 /* 7.10.2020 */
-/* MITTATILAUSTYÖ */
-.mittatilaustyö-link {
+/* MITTATILAUSTYO */
+.mittatilaustyo-link {
   font-size: 3rem;
 }
 
@@ -229,10 +229,10 @@ button {
   font-size: 25px;
 }
 
-/********************* MITTATILAUSTYÖ LOPETUS *************************/
+/********************* MITTATILAUSTYO LOPETUS *************************/
 
 /* 9.10.2020 */
-/* LÄMPÖMITTARI */
+/* LAMPOMITTARI */
 .slider {
   width: 50rem;
 }
@@ -248,12 +248,13 @@ button {
   align-items: center;
   transition: 0.5s all ease-in;
 }
-/********************* LÄMPÖMITTARI LOPETUS *************************/
+/********************* LAMPOMITTARI LOPETUS *************************/
 
 /* 12.10.2020 */
 /* NOPPAPELI */
 .noppa {
   width: 7.5rem;
+  max-width: 7.5rem;
   margin: 1rem;
 }
 /********************* NOPPAPELI LOPETUS *************************/
