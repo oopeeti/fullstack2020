@@ -38,29 +38,36 @@ const subBtn = document.getElementById("sub-btn"); // - nappi
 const divideBtn = document.getElementById("divide-btn"); // nappi
 const multiplyBtn = document.getElementById("multiply-btn"); // * nappi 
 
-addBtn.addEventListener("click", () => {
-  const num1 = parseInt(lasku1.value);
-  const num2 = parseInt(lasku2.value);
-  vastaus.innerHTML = `Vastaus: ${num1} + ${num2} = ${num1 + num2}`
-});
+addBtn.addEventListener("click", plus);
+subBtn.addEventListener("click", miinus);
+divideBtn.addEventListener("click", jako);
+multiplyBtn.addEventListener("click", kerto);
 
-subBtn.addEventListener("click", () => {
-  const num1 = parseInt(lasku1.value);
-  const num2 = parseInt(lasku2.value);
-  vastaus.innerHTML = `Vastaus: ${num1} - ${num2} = ${num1 - num2}`
-});
+// Funktiot
+function plus(x, y) {
+  x = lasku1.value;
+  y = lasku2.value;
+  vastaus.innerHTML = `Vastaus: ${x} + ${y} = ${x + y}`
+}
+function miinus(x, y) {
+  x = lasku1.value;
+  y = lasku2.value;
+  vastaus.innerHTML = `Vastaus: ${x} - ${y} = ${x - y}`
+}
 
-divideBtn.addEventListener("click", () => {
-  const num1 = parseInt(lasku1.value);
-  const num2 = parseInt(lasku2.value);
-  vastaus.innerHTML = `Vastaus: ${num1} / ${num2} = ${num1 / num2}`
-});
+function jako(x, y) {
+  x = lasku1.value;
+  y = lasku2.value;
+  vastaus.innerHTML = `Vastaus: ${x} / ${y} = ${x / y}`
+}
+function kerto(x, y) {
+  x = lasku1.value;
+  y = lasku2.value;
+  vastaus.innerHTML = `Vastaus: ${x} * ${y} = ${x * y}`
+}
 
-multiplyBtn.addEventListener("click", () => {
-  const num1 = parseInt(lasku1.value);
-  const num2 = parseInt(lasku2.value);
-  vastaus.innerHTML = `Vastaus: ${num1} * ${num2} = ${num1 * num2}`
-});
+
+
 /*********************LASKURI LOPETUS*************************/
 
 // 9.10.2020 - Lampomittari
@@ -108,59 +115,35 @@ diceBtn.addEventListener("click", () => {
   const mathRandom2 = Math.floor(Math.random() * 6) + 1; // Rollaa random numeron 1-6
   const noppaTulos = document.getElementById("noppa-tulos");
   noppaTulos.innerHTML = "";
-  
-  if (mathRandom1 === mathRandom2) {
-    noppaTulos.innerText = "Sait parit!"
-   }
 
-  // Noppa 1
-  if (mathRandom1 === 1) {
-   noppa1.setAttribute("src", "img/noppa/1.png");
-  } else if (mathRandom1 === 2) {
-    noppa1.setAttribute("src", "img/noppa/2.png");
-  } else if (mathRandom1 === 3) {
-    noppa1.setAttribute("src", "img/noppa/3.png");
-  } else if (mathRandom1 === 4) {
-    noppa1.setAttribute("src", "img/noppa/4.png");
-  } else if (mathRandom1 === 5) {
-    noppa1.setAttribute("src", "img/noppa/5.png");
-  } else if (mathRandom1 === 6) {
-    noppa1.setAttribute("src", "img/noppa/6.png");
+  // Funktiot
+  function setKuva(noppa, luku) {
+    noppa.setAttribute("src", `img/noppa/${luku}.png`);
   }
 
-  // Noppa 2
-  if (mathRandom2 === 1) {
-    noppa2.setAttribute("src", "img/noppa/1.png");
-   } else if (mathRandom2 === 2) {
-     noppa2.setAttribute("src", "img/noppa/2.png");
-   } else if (mathRandom2 === 3) {
-     noppa2.setAttribute("src", "img/noppa/3.png");
-   } else if (mathRandom2 === 4) {
-     noppa2.setAttribute("src", "img/noppa/4.png");
-   } else if (mathRandom2 === 5) {
-     noppa2.setAttribute("src", "img/noppa/5.png");
-   } else if (mathRandom2 === 6) {
-     noppa2.setAttribute("src", "img/noppa/6.png");
-   }
+  // Noppa 1
+  setKuva(noppa1, mathRandom1);
 
+  // Noppa 2
+  setKuva(noppa2, mathRandom2);
+
+    if (mathRandom1 === mathRandom2) {
+    noppaTulos.innerText = "Sait parit!"
+   }
 });
 /*********************NOPPA LOPETUS*************************/
 
 // VALOTEHTAVA 13.10.2020
 
 // Napit
-const etuvaloToggle = document.getElementById("etuvalo-nappi");
-const keskivaloToggle = document.getElementById("keskivalo-nappi");
-const takavaloToggle = document.getElementById("takavalo-nappi");
+const etuvaloToggle = document.getElementById("etuvalo-nappi").addEventListener("change", onOff);
+const keskivaloToggle = document.getElementById("keskivalo-nappi").addEventListener("change", onOff);
+const takavaloToggle = document.getElementById("takavalo-nappi").addEventListener("change", onOff);
 
 // Kuvat
 const etuvaloImg = document.getElementById("etuvalo-img");
 const keskivaloImg = document.getElementById("keskivalo-img");
 const takavaloImg = document.getElementById("takavalo-img");
-
-etuvaloToggle.addEventListener("change", onOff);
-keskivaloToggle.addEventListener("change", onOff);
-takavaloToggle.addEventListener("change", onOff);
 
 function onOff(event) {
   const toggle = event.target.checked;
@@ -206,10 +189,3 @@ function mene(event) {
       }
     }, 1500);
 }
-
-
-
-
-
-
-
