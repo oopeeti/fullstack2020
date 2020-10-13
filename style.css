@@ -127,7 +127,6 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 1rem;
 }
 
 .link-list-item {
@@ -141,16 +140,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 6.2rem;
-  border: 1px ridge #333;
-  border-radius: 10px;
-  width: 40vw;
 }
 
 .active {
@@ -351,15 +340,17 @@ input:checked + .slider:before {
 
 #kerrokset {
   display: flex;
+  max-width: 100%;
 }
 
+
 #kerrokset li {
-  padding: 1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  padding: 1rem 0.5rem;
 }
 
 /********************* HISSITEHTAVA LOPETUS *************************/
