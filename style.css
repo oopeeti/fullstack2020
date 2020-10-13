@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   /* border-bottom: 2px solid #fff; */
   margin: 0.5rem;
   color: #8fc866;
@@ -96,6 +96,12 @@ button {
 .nimi {
   color: #8fc866;
   font-style: inherit;
+}
+
+/* UTILITY */
+
+.sPara {
+  font-size: 1.5rem;
 }
 
 /********************* NAVIGATION *************************/
@@ -233,7 +239,7 @@ button {
 /* LAMPOMITTARI */
 
 
-.slider {
+.slider-heat {
   width: 100%;
 }
 
@@ -258,7 +264,89 @@ button {
   max-width: 7.5rem;
   margin: 1rem;
 }
+
+
 /********************* NOPPAPELI LOPETUS *************************/
+
+/* VALOTEHTAVA */
+.light-controls {
+  display: flex;
+}
+
+.lights {
+  display: flex;
+}
+
+.valo {
+  height: 10rem;
+}
+
+/* On-OFF nappi alempana kopsattu suoraan w3schools!! */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 2.2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/********************* VALOTEHTAVA LOPETUS *************************/
+
 
 /********************* FOOTER *************************/
 #footer {

@@ -146,8 +146,36 @@ diceBtn.addEventListener("click", () => {
 });
 /*********************NOPPA LOPETUS*************************/
 
+// VALOTEHTAVA 13.10.2020
 
+// Napit
+const etuvaloToggle = document.getElementById("etuvalo-nappi");
+const keskivaloToggle = document.getElementById("keskivalo-nappi");
+const takavaloToggle = document.getElementById("takavalo-nappi");
 
+// Kuvat
+const etuvaloImg = document.getElementById("etuvalo-img");
+const keskivaloImg = document.getElementById("keskivalo-img");
+const takavaloImg = document.getElementById("takavalo-img");
+
+etuvaloToggle.addEventListener("change", onOff);
+keskivaloToggle.addEventListener("change", onOff);
+takavaloToggle.addEventListener("change", onOff);
+
+function onOff(event) {
+  const toggle = event.target.checked;
+  const img = event.target.parentNode.parentNode.lastElementChild; // input => li => img 
+
+  switch (toggle) {
+    case true:
+      img.setAttribute("src", "img/valot/on.png");
+      break;
+
+    case false:
+      img.setAttribute("src", "img/valot/off.png");
+        break;
+  }
+}
 
 
 
