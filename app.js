@@ -177,6 +177,39 @@ function onOff(event) {
   }
 }
 
+/*********************VELOTEHTAVA LOPETUS*************************/
+
+// HISSITEHTAVA 13.10.2020
+
+const kerrosValinta = document.getElementsByClassName("kerros");
+const valitseKerros = document.getElementById("valitse-kerros-btn");
+const kerrosPara = document.getElementById("tama-kerros");
+
+let kerrosNro = parseInt(document.getElementById("kerros-nro").innerText);
+let paateKerros;
+
+// Eventit
+valitseKerros.addEventListener("click", mene);
+
+// Funktiot
+function mene(event) {
+  event.preventDefault();
+  paateKerros = parseInt(document.querySelector("input[name='kerros']:checked").value);
+  
+    setInterval(() => {
+      if (kerrosNro < paateKerros) {
+        kerrosNro++;
+        kerrosPara.innerText = `Olet kerroksessa: ${kerrosNro}`;
+      } else if (kerrosNro > paateKerros) {
+        kerrosNro--;
+        kerrosPara.innerText = `Olet kerroksessa: ${kerrosNro}`;
+      }
+    }, 1500);
+}
+
+
+
+
 
 
 

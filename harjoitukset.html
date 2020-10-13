@@ -87,7 +87,7 @@
                     <span class="slider round"></span>
                   </label>
                   <p class="sPara">Etuvalo</p>
-                  <img class="valo" id="etuvalo-img" src="/img/valot/off.png" alt="">
+                  <img class="valo" id="etuvalo-img" src="/img/valot/off.png" alt="etuvalo">
                 </li>
                 <li id="keskivalo">
                   <label class="switch">
@@ -95,7 +95,7 @@
                     <span class="slider round"></span>
                   </label>
                   <p class="sPara">Keskivalo</p>
-                  <img class="valo" id="keskivalo-img" src="/img/valot/off.png" alt="">
+                  <img class="valo" id="keskivalo-img" src="/img/valot/off.png" alt="keskivalo">
                 </li>
                 <li id="takavalovalo">
                   <label class="switch">
@@ -103,7 +103,7 @@
                     <span class="slider round"></span>
                   </label>
                   <p class="sPara">Takavalo</p>
-                  <img class="valo" id="takavalo-img" src="/img/valot/off.png" alt="">
+                  <img class="valo" id="takavalo-img" src="/img/valot/off.png" alt="takavalo">
                 </li>
               </ul>
             </div>
@@ -111,6 +111,39 @@
         <!-- HISSITEHTAVA -->
         <div class="harjoitus">
           <h1>Hissitehtävä</h1>
+          <button id="valitse-kerros-btn" class="down" type="submit" onsubmit="mene();" form="kerrokset" value="Submit">Valitse kerros</button>
+          <form id="kerrokset">
+            <li>
+              <input type="radio" class="kerros" id="1-kerros" name="kerros" value="1">
+              <label for="1-kerros">1</label><br>
+            </li>
+
+            <li>
+                <input type="radio" class="kerros" id="2-kerros" name="kerros" value="2">
+                <label for="2-kerros">2</label><br>
+            </li>
+
+            <li>
+              <input type="radio" class="kerros" id="3-kerros" name="kerros" value="3">
+              <label for="3-kerros">3</label><br>
+            </li>
+
+            <li>
+              <input type="radio" class="kerros" id="4-kerros" name="kerros" value="4">
+              <label for="4-kerros">4</label><br>
+            </li>
+
+            <li>
+              <input type="radio" class="kerros" id="5-kerros" name="kerros" value="5">
+              <label for="5-kerros">5</label><br>
+            </li>
+
+            <li>
+                <input type="radio" class="kerros" id="6-kerros" name="kerros" value="6">
+                <label for="6-kerros">6</label><br>
+            </li>  
+          </form>
+          <p id="tama-kerros">Olet kerroksessa: <span id="kerros-nro">1</span></p>
       </div>
     <!-- HARJOITUSOSION LOPPU -->
     </div> 
