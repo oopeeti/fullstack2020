@@ -51,7 +51,7 @@ a:hover {
 /* Utility Classes */
 
 .white-text {
-	color: #azure;
+	color: azure;
 	text-shadow: 3px 3px 5px black;
 }
 
@@ -138,6 +138,8 @@ a:hover {
 	justify-content: flex-start;
 }
 
+
+
 /* Content */
 .content {
 	display: flex;
@@ -179,13 +181,105 @@ a:hover {
 
 #vision {
 	background: url("../img/city-2.jpg") center no-repeat;
-
+	
 }
 
 #crypto {
 	background: url("../img/ethereum.jpg") center no-repeat;
+	
+}
+
+/* UUTISET */
+
+.container-uutiset {
+	height: 100%;
+	height: 75vh;
+	outline: none;
+}
+
+.header-uutiset {
+	height: 10%;
+}
+.content-uutiset {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	background-color: rgb(37, 37, 37);
+}
+
+#sivupalkki {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sivupalkki-uutiset {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.linkki {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 33.33%;
+	width: 100%;
+	border: 1px ridge rgb(19, 19, 19);
+	border-right: 0;
+	font-size: 2rem;
+}
+
+.uutiset {
+	width: 80%;
+	height: 100%;
+}
+
+.uutinen {
+	height: 33.33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+	border: 1px ridge rgb(19, 19, 19);
+	border-left: 0;
+}
+
+.uutinen a {
+	font-size: 1.5rem;
+	margin: 2rem;
+	background: rgb(32, 32, 32);
+	padding: 1rem;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.47);
+}
+
+.uutinen a:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.47);
+	border: none;
+	transition: all 0.3s ease-in;
+}
+
+.uutinen p {
+	font-size: 1.2rem;
+	max-width: 75%;
+}
+
+#footer-uutiset {
+	font-size: 1.5rem;
+	position: absolute;
+	bottom: 5%;
 
 }
+
+/*Footer*/
 
 #paluu-linkki {
 	opacity: 0.2;
@@ -198,13 +292,11 @@ a:hover {
 	transition: all 0.2s ease-in-out;
 }
 
-#footer p {
+.footer p {
 	opacity: 0.2;
 }
 
-/*Footer*/
-
-#footer {
+.footer {
 	/*border: 2px solid red;*/	
 	width: 100%;
 	height: 100%;
