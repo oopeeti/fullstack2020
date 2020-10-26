@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c4f3b89a16.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/harjoitukset.css">
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Julkaisuharjoitus</title>
 </head>
 
@@ -57,13 +60,13 @@
       <!-- MITTATILAUSTYO TEHTAVA -->
         <div class="harjoitus">
             <ul class="link-list">
-              <li class="link-list-item mittatilaustyo-link"><a href="mittatilaus.html">Mittatilaustehtävä</a></li>
+              <li class="link-list-item"><a href="mittatilaus.html" class="linkit">Mittatilaustehtävä</a></li>
             </ul>
         </div>
       <!-- LAMPOMITTARI TEHTAVA -->
         <div class="harjoitus">
           <h1>Lämpomittari</h1>
-              <input type="range" class="slider-heat" id="lampomittari" min="-100" max="100" value="0">
+              <input type="range" class="slider-heat input" id="lampomittari" min="-100" max="100" value="0">
               <div id="heat-div"><p id="heat">0 ℃</p></div>
             </ul>
         </div>
@@ -117,32 +120,32 @@
           <button id="valitse-kerros-btn" class="down" type="submit" onsubmit="mene();" form="kerrokset" value="Submit">Valitse kerros</button>
           <form id="kerrokset">
             <li>
-              <input type="radio" class="kerros" id="1-kerros" name="kerros" value="1">
+              <input type="radio" class="kerros input" id="1-kerros" name="kerros" value="1">
               <label for="1-kerros">1</label><br>
             </li>
 
             <li>
-                <input type="radio" class="kerros" id="2-kerros" name="kerros" value="2">
+                <input type="radio" class="kerros input" id="2-kerros" name="kerros" value="2">
                 <label for="2-kerros">2</label><br>
             </li>
 
             <li>
-              <input type="radio" class="kerros" id="3-kerros" name="kerros" value="3">
+              <input type="radio" class="kerros input" id="3-kerros" name="kerros" value="3">
               <label for="3-kerros">3</label><br>
             </li>
 
             <li>
-              <input type="radio" class="kerros" id="4-kerros" name="kerros" value="4">
+              <input type="radio" class="kerros input" id="4-kerros" name="kerros" value="4">
               <label for="4-kerros">4</label><br>
             </li>
 
             <li>
-              <input type="radio" class="kerros" id="5-kerros" name="kerros" value="5">
+              <input type="radio" class="kerros input" id="5-kerros" name="kerros" value="5">
               <label for="5-kerros">5</label><br>
             </li>
 
             <li>
-                <input type="radio" class="kerros" id="6-kerros" name="kerros" value="6">
+                <input type="radio" class="kerros input" id="6-kerros" name="kerros" value="6">
                 <label for="6-kerros">6</label><br>
             </li>  
           </form>
@@ -163,13 +166,13 @@
       <!-- JQuery -->
       <div class="harjoitus">
         <ul class="link-list">
-          <li class="link-list-item mittatilaustyo-link"><a href="jQuery.html">JQuery</a></li>
+          <li class="link-list-item"><a href="jQuery.html" class="linkit">JQuery</a></li>
         </ul>
       <!-- HARJOITUSOSION LOPPU -->
     </div> 
-    <!-- FOOTER -->
-    <footer id="footer">© Olli-Pekka Nikka</footer>
   </div>
+  <!-- FOOTER -->
+  <footer id="footer">© Olli-Pekka Nikka</footer>
   <script src="js/app.js"></script>
 </body>
 </html>

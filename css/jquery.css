@@ -1,0 +1,15 @@
+.click,
+.input,
+.hover,
+.kuva {
+    margin: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 52px -10px rgba(0,0,0,0.47);
+    background-color: rgb(14, 14, 14);
+}
+
+.kuva,
+.input {
+    flex-direction: column;
+    margin: 1rem;
+}

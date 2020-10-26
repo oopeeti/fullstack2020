@@ -1,0 +1,189 @@
+/********************* HARJOITUSKORTIT *************************/
+.harjoitukset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .harjoitus {
+    color: #fff;
+    background-color: #333;
+    border: 3px solid rgb(29, 29, 29);
+    border-style: outset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -2px #00000078;
+    margin: 0.7rem;
+    width: 40rem;
+    height: 22rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /********************* HARJOITUSKORTIT LOPETUS *************************/
+  
+  /********************* TEHTAVAT *************************/
+  
+  /* 6.10.2020 */
+  /* LASKURI */
+  .harjoitus #vastaus {
+    margin-bottom: 1rem;
+    color: #8fc866;
+  }
+  
+  #lasku1,
+  #lasku2 {
+    font-size: 1.5rem;
+  }
+  /********************* LASKURI LOPETUS *************************/
+  
+  /* 7.10.2020 */
+  /* MITTATILAUSTYO */
+  .mittatilaustyo-link {
+    font-size: 3rem;
+  }
+  
+  
+  /********************* MITTATILAUSTYO LOPETUS *************************/
+  
+  /* 9.10.2020 */
+  /* LAMPOMITTARI */
+  
+  
+  .slider-heat {
+    width: 100%;
+  }
+  
+  #heat-div {
+    width: 100%;
+    height: 15rem;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all ease-in;
+  }
+  /********************* LAMPOMITTARI LOPETUS *************************/
+  
+  /* 12.10.2020 */
+  /* NOPPAPELI */
+  .noppa {
+    width: 7.5rem;
+    max-width: 7.5rem;
+    margin: 1rem;
+  }
+  
+  
+  /********************* NOPPAPELI LOPETUS *************************/
+  
+  /* VALOTEHTAVA */
+  .light-controls {
+    display: flex;
+  }
+  
+  .lights {
+    display: flex;
+  }
+  
+  .valo {
+    height: 10rem;
+  }
+  
+  /* On-OFF nappi alempana kopsattu suoraan w3schools!! */
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2.2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /********************* VALOTEHTAVA LOPETUS *************************/
+  
+  /* HISSITEHTAVA */
+  
+  #kerrokset {
+    display: flex;
+    max-width: 100%;
+  }
+  
+  
+  #kerrokset li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+  }
+  
+  /********************* HISSITEHTAVA LOPETUS *************************/
+  

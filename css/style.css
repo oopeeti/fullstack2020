@@ -1,563 +1,181 @@
 /* RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BASIC STYLING */
-body,
-html {
-  background: rgb(25, 26, 25);
-  color: rgb(238, 229, 229);
-  font-size: 10px;
-  font-family: 'Roboto', sans-serif;
-  overflow: auto;
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  align-items: center;
-}
-
-h1 {
-  font-size: 3rem;
-  /* border-bottom: 2px solid #fff; */
-  margin: 0.5rem;
-  color: #8fc866;
-}
-
-ul {
-  list-style: none;
-}
-
-p {
-  font-size: 2rem;
-  margin: 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: rgba(177, 140, 140, 0.438);
-  cursor: pointer;
-}
-
-a:hover {
-  color: #8fc866;
-  transition: 0.1s ease-in;
-}
-
-input {
-  margin: 0.5rem;
-  padding: 5px;
-  border-radius: 3px;
-  border: none;
-  outline: none;
-}
-
-
-.buttons {
-  text-align: center;
-}
-
-button {
-  border: none;
-  border-radius: 3px;
-  font: inherit;
-  font-size: 1.2rem;
-  line-height: 1;
-  padding: 1.5rem 2rem;
-  margin: 0.5rem;
-  cursor: pointer;
-  box-shadow: 0px 3px 4px 1px;
-  font-weight: 600;
-  background-color: #8fc866;
-  outline: none;
-}
-
-/* Button effects */
-.down:hover {
-  box-shadow: 0px 2px 1px 1px;
-  transition: all 0.2s ease-in-out;
-  transform: translateY(1px);
-  background-color: #7daf5a;
-
-}
-
-.nimi {
-  color: #8fc866;
-  font-style: inherit;
-}
-
-/* UTILITY */
-
-.sPara {
-  font-size: 1.5rem;
-}
-
-.margin-1 {
-  margin: 1rem;
-}
-
-.margin-2 {
-  margin: 2rem;
-}
-
-/********************* NAVIGATION *************************/
-#navigation {
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  width: 50%;
-  min-width: 500px;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 0rem;
-  margin-bottom: 1.5rem;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  box-shadow: 0px 0px 52px -10px rgba(0,0,0,0.47);
-  border-bottom: 5px solid rgba(0, 0, 0, 0.198);
-}
-
-
-.link-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.link-list-item {
-  font-size: 1.7rem;
-  padding: 1rem 2rem 1rem 2rem;
-  font-weight: bold;
-  white-space: nowrap;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.active {
-  color: #8fc866;
-}
-
-/********************* NAVIGATION LOPETUS *************************/
-
-/********************* ETUSIVU *************************/
-.main-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: 85%;
-  
-}
-
-/********************* ETUSIVU LOPETUS *************************/
-
-
-/********************* HARJOITUSKORTIT *************************/
-.harjoitukset {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.harjoitus {
-  color: #fff;
-  background-color: #333;
-  border: 3px solid rgb(29, 29, 29);
-  border-style: outset;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px -2px #00000078;
-  margin: 10px;
-  width: 40rem;
-  height: 25rem;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-/********************* HARJOITUSKORTIT LOPETUS *************************/
-
-/********************* TEHTAVAT *************************/
-
-/* 6.10.2020 */
-/* LASKURI */
-.harjoitus #vastaus {
-  margin-bottom: 1rem;
-  color: #8fc866;
-}
-
-#lasku1,
-#lasku2 {
-  font-size: 1.5rem;
-}
-/********************* LASKURI LOPETUS *************************/
-
-/* 7.10.2020 */
-/* MITTATILAUSTYO */
-.mittatilaustyo-link {
-  font-size: 3rem;
-}
-
-
-.icon {
-  font-size: 25px;
-}
-
-/********************* MITTATILAUSTYO LOPETUS *************************/
-
-/* 9.10.2020 */
-/* LAMPOMITTARI */
-
-
-.slider-heat {
-  width: 100%;
-}
-
-#heat-div {
-  width: 100%;
-  height: 15rem;
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s all ease-in;
-}
-/********************* LAMPOMITTARI LOPETUS *************************/
-
-/* 12.10.2020 */
-/* NOPPAPELI */
-.noppa {
-  width: 7.5rem;
-  max-width: 7.5rem;
-  margin: 1rem;
-}
-
-
-/********************* NOPPAPELI LOPETUS *************************/
-
-/* VALOTEHTAVA */
-.light-controls {
-  display: flex;
-}
-
-.lights {
-  display: flex;
-}
-
-.valo {
-  height: 10rem;
-}
-
-/* On-OFF nappi alempana kopsattu suoraan w3schools!! */
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 45px;
-  height: 25px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 3px;
-  bottom: 2.2px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(18px);
-  -ms-transform: translateX(18px);
-  transform: translateX(18px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-/********************* VALOTEHTAVA LOPETUS *************************/
-
-/* HISSITEHTAVA */
-
-#kerrokset {
-  display: flex;
-  max-width: 100%;
-}
-
-
-#kerrokset li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  padding: 1rem 0.5rem;
-}
-
-/********************* HISSITEHTAVA LOPETUS *************************/
-
-
-
-/********************* FOOTER *************************/
-#footer {
-  text-align: center;
-  font-size: 2rem;
-  margin: 3rem;
-  opacity: 0.1;
-}
-
-#footer span {
-  margin-left: 3px;
-  font-style: italic;
-}
-/********************* FOOTER LOPETUS *************************/
-
-/* Fontawesome */
-.icon-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/********************* MEDIA QUERIES *************************/
-/* WIDTH */
-@media only screen and (max-width: 450px) {
-  h1 {
-    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  button {
-    margin: 1rem 0.5rem;
-    padding: 1.5rem 2rem;
-  }
-  
-  input {
-    margin: 0.5rem;
-    padding: 5px;
-  }
-  
-  .shortcut-link {
-    padding: 1rem;
-  }
-  
-  #navigation {
-    width: 90%;
-  }
-  
-  
-  .harjoitus {
-    margin: 0rem 0.5rem;
-  }
-
-  .harjoitukset {
-    flex-direction: column;
-  }
-
-  .harjoitus {
-    padding: 1rem;
-    margin: 1rem 0rem;
-    min-width: 75vw;
-    min-height: 30vh;
-    max-width: 90vw;
-  }
-
-  #footer {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 330px) {
   /* BASIC STYLING */
+  body,
+  html {
+    background: rgb(25, 26, 25);
+    color: rgb(238, 229, 229);
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+  }
+  
   body {
-    font-size: 8px;
+    height: 100vh;
+    width: 100vw;
   }
- 
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+  }
+  
   h1 {
-    font-size: 2rem;
-  }
-
-  button {
-    margin: 0.5rem 0.4rem;
-    padding: 1.2rem 2rem;
-  }
-
-  input {
+    font-size: 3rem;
+    /* border-bottom: 2px solid #fff; */
     margin: 0.5rem;
-    padding: 5px;
+    color: #8fc866;
   }
-
+  
+  ul {
+    list-style: none;
+  }
+  
   p {
-    margin: 0.5rem 1rem 1rem 1rem;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgba(177, 140, 140, 0.438);
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: #8fc866;
+    transition: 0.1s ease-in;
+  }
+  
+  input {
+    margin: 0.5rem !important;
+    padding: 0.5rem !important;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+  }
+  
+  button {
+    border: none;
+    border-radius: 3px;
+    font: inherit;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0px 3px 4px 1px;
+    font-weight: 600;
+    background-color: #8fc866;
+    outline: none;
+    padding: 1.5rem 2rem !important;
+    margin: 1rem !important;
+  }
+  
+  .buttons {
+    text-align: center;
+  }
+  
+  
+  /* Button effects */
+  .down:hover {
+    box-shadow: 0px 2px 1px 1px;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(1px);
+    background-color: #7daf5a;
+  
+  }
+  
+  .nimi {
+    color: #8fc866;
+    font-style: inherit;
   }
 
-  /* NAV */
+  .icon {
+    font-size: 25px;
+  }
+  
+  /********************* NAVIGATION *************************/
   #navigation {
-    width: 100%;
-    border-bottom-right-radius: 10rem;
-    border-bottom-left-radius: 10rem;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 50%;
+    min-width: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0rem;
+    margin-bottom: 1.5rem;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 0px 0px 52px -10px rgba(0,0,0,0.47);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.198);
   }
-
+  
+  
+  .link-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
   .link-list-item {
-    font-size: 1.3rem;
-    padding: 1rem;
-    margin: 0;
+    font-size: 1.7rem;
+    padding: 1rem 2rem 1rem 2rem;
     font-weight: bold;
+    white-space: nowrap;
   }
   
   .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #333;
   }
-
-  /* CARDS */
-  .harjoitus {
-    padding: 0.5rem;
-    margin: 0.5rem 0rem;
-    min-width: 60vw;
-    min-height: 27vh;
-    max-width: 90vw;
+  
+  .active {
+    color: #8fc866;
   }
-
-  /* FOOTER */
-  #footer {
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@media only screen and (max-width: 660px) {
-  /* BASIC STYLING */
- 
-  h1 {
-    font-size: 3rem;
-  }
-
-  button {
-    margin: 1rem 0.5rem;
-    padding: 1.5rem 2rem;
-  }
-
-  input {
-    margin: 0.75rem;
-    padding: 0.75rem;
-  }
-
-  /* NAV */
-  #navigation {
-    width: 80%;
-  }
-
-  .link-list-item {
-    font-size: 1.7rem;
-  }
-
-  /* CARDS */
-
-  .harjoitukset {
+  
+  /********************* NAVIGATION LOPETUS *************************/
+  
+  /********************* ETUSIVU *************************/
+  .main-area {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 85%;
   }
-
-  .harjoitus {
-    padding: 1rem;
-    margin: 0.5rem 0.4rem;
-    min-width: 50vw;
-    min-height: 30vh;
-    max-width: 90vw;
-  }
-}
-
-
-/* HEIGHT */
-@media only screen and (max-height: 450px) {
-  #navigation {
-    width: 90%;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
-  .harjoitus {
-    padding: 1rem;
-    margin: 1rem 0rem;
-    min-width: 60vw;
-    min-height: 30vh;
-    max-width: 90vw;
-  }
-
+  
+  /********************* ETUSIVU LOPETUS *************************/
+  
+  
+  /********************* FOOTER *************************/
   #footer {
-    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem;
+    opacity: 0.1;
   }
-}
-/********************* MEDIA QUERIES LOPETUS *************************/
-
-
-
+  
+  #footer span {
+    margin-left: 3px;
+    font-style: italic;
+  }
+  /********************* FOOTER LOPETUS *************************/
+  
+  /* Fontawesome */
+  .icon-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
