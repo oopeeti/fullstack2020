@@ -118,7 +118,7 @@ diceBtn.addEventListener("click", () => {
 
   // Funktiot
   function setKuva(noppa, luku) {
-    noppa.setAttribute("src", `img/noppa/${luku}.png`);
+    noppa.setAttribute("src", `images/noppa/${luku}.png`);
   }
 
   // Noppa 1
@@ -151,11 +151,11 @@ function onOff(event) {
 
   switch (toggle) {
     case true:
-      img.setAttribute("src", "img/valot/on.png");
+      img.setAttribute("src", "images/valot/on.png");
       break;
 
     case false:
-      img.setAttribute("src", "img/valot/off.png");
+      img.setAttribute("src", "images/valot/off.png");
         break;
   }
 }

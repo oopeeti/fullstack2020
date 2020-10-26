@@ -62,11 +62,11 @@ $(function(){
     // Harjoitus 6
     $("#hymynaama").on({
         mouseenter: function() {
-            $(this).attr("src", "../img/hymynaamat/sad.png");
+            $(this).attr("src", "./images/hymynaamat/sad.png");
         },
 
         mouseleave: function() {
-            $(this).attr("src", "../img/hymynaamat/happy.png");
+            $(this).attr("src", "./images/hymynaamat/happy.png");
         }
     });
 

@@ -106,7 +106,7 @@ a:hover {
 
 
 .hero-image {
-	background-image: url("../img/city.jpg");
+	background-image: url("../images/city.jpg");
 	background-color: #cccccc;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -176,16 +176,16 @@ a:hover {
 }
 
 #future {
-	background: url("../img/space.jpg") center no-repeat;
+	background: url("../images/space.jpg") center no-repeat;
 }
 
 #vision {
-	background: url("../img/city-2.jpg") center no-repeat;
+	background: url("../images/city-2.jpg") center no-repeat;
 	
 }
 
 #crypto {
-	background: url("../img/ethereum.jpg") center no-repeat;
+	background: url("../images/ethereum.jpg") center no-repeat;
 	
 }
 
