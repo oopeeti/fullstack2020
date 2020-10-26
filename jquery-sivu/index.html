@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c4f3b89a16.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="jquery_functions.js"></script>
+  <link rel="stylesheet" href="../style.css">
+  <title>Julkaisuharjoitus</title>
+</head>
+<style>
+    button {
+        padding: 1rem 1.5rem;
+    }
+
+    .click,
+    .input,
+    .hover,
+    .kuva {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        border: 3px ridge black;
+    }
+
+    .kuva,
+    .input {
+        flex-direction: column;
+    }
+
+
+</style>
+<body>
+  <div class="container">
+    <nav id="navigation">
+      <div class="logo">
+        <a href="https://github.com/oopeeti" target="_blank" class="icon-links">
+          <i class="icon fab fa-github"></i>
+        </a>
+        <p class="nimi">Olli-Pekka</p>
+      </div>
+      <ul class="link-list">
+        <li class="link-list-item"><a href="../index.html">Etusivu</a></li>
+        <li class="link-list-item"><a href="../harjoitukset.html">Harjoitukset</a></li>
+        <li class="link-list-item"><a href="../testialue.html" class="active">Testialue</a></li>
+      </ul>
+    </nav>
+    <div class="main-area">
+      <h1>JQuery</h1>
+        <div class="buttons">
+        <h2 id="otsikko" class="margin-2">Päivämäärä</h2>
+            <div class="click">
+                <button class="down" id="aika-btn">Lisää päivä ja aika</button>
+                <button class="down" id="piilota-btn">Piilota</button>
+                <button class="down" id="nayta-btn">Näytä</button>
+                <button class="down" id="toggle-btn">Toggle</button>
+                <button class="down" id="vari-btn">Vaihda sivun taustavari ja otsikon väri (dblclick)</button>
+            </div>
+            <div class="hover">
+                <button class="down" id="hover-btn">Hover</button>
+                <button class="down" id="piilotus-btn">Tekstit piiloon/näkyville</button>
+            </div>
+            <div class="input">
+                <div>
+                    <input id="input-1">
+                    <button class="down" id="vaihda-btn">Vaihda!</button>
+                </div>
+                    <input id="input-2">
+                   
+            </div>
+            <div class="kuva">
+                <img id="hymynaama" src="../img/hymynaamat/happy.png" alt="" class="margin-1">
+                <div class="buttons">
+                    <button class="down" id="lisaa-btn">Lisää kuva</button>
+                    <button class="down" id="poista-btn">Poista kuva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">© Olli-Pekka Nikka</footer>
+  </div>
+</body>
+</html>
