@@ -16,18 +16,14 @@ form.addEventListener("submit", (e) => {
     let passwordLength, specialChar, firstCharUpper, noSpaces, passwordsMatch = false;
     const regExp = /[!?+@#%&]/;
 
-<<<<<<< HEAD
     if (password.length >= 8) {passwordLength = true} // Is password length atleast 8
     if (!regExp.test(password).valueOf()) {specialChar = true} // Is there special characters
     if (password.charAt(0) != password.charAt(0).toUpperCase()) {firstCharUpper = true} // Is first char upper check
     if (!/\s/.test(password)) {noSpaces = true} // Spaces check
     if (password === rePassword) {passwordsMatch = true} // Password check
-=======
     if (password.length >= 8) {passwordLength = true}
     if (!regExp.test(password).valueOf()) {specialChar = true}
     if (password.charAt(0) != password.charAt(0).toUpperCase()) {firstCharUpper = true}
     if (!/\s/.test(password)) {noSpaces = true}
     if (password === rePassword) {passwordsMatch = true}
->>>>>>> 5fe7e674f041fa3e9442314c671c6cf9ef8db5d0
-
 });
