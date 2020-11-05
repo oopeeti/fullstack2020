@@ -13,3 +13,7 @@
   .linkit {
     font-size: 3rem;
   }
+
+  .important {
+    color: red;
+  }

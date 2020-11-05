@@ -189,3 +189,46 @@ function mene(event) {
       }
     }, 1500);
 }
+
+// Login tehtävä
+
+// Funktiot
+  const submitBtn = document.getElementById("submit-btn");
+
+  submitBtn.addEventListener("click", () => {
+    const userName = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if(userName.length == 0 || password.length == 0) {
+      alert("Please check your information");
+    } else {
+      alert("You have successfully submitted the form!");
+    }
+  });
+
+  // Lomakkeen tarkistus
+  const laheta = document.getElementById("laheta-btn");
+  const newsletterForm = document.getElementById("newsletter");
+  
+
+  newsletterForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const checkBox = document.getElementById("agreement").checked;
+    let email = document.getElementById("email").value;
+    
+    // funktiot
+      function validateEmail(mail) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(mail);
+      }
+
+      checkedEmail = validateEmail(email);
+
+    if(!checkBox && email) {alert("Sinun pitää hyväksyä ehdot!")}
+    if(!checkedEmail && checkBox) {alert("Tarkista sähköpostiosoitteesi!")}
+    if(!checkedEmail && !checkBox) {alert("Tarkista tiedot!")}
+    if (checkedEmail && checkBox) {
+      alert(`Newsletter tilaus ${email} osoitteeseen vastaanotettu`);
+      console.log("News letter form submitted");
+    }
+  });

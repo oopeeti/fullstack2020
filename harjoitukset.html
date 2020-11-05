@@ -154,14 +154,31 @@
       <!-- LOMAKEHARJOITUS -->
       <div class="harjoitus">
         <h1>Kirjautuminen</h1>
+        <form id="login">
+          <label for="username"></label>
+          <input type="text" class="input" id="username" name="username" placeholder="Enter your username">
+          <label for="password"></label>
+          <input type="password" class="input" id="password" name="password" placeholder="Enter your password">
+          <button id="submit-btn" type="button">Submit</button>
+        </form>
       </div>
       <!-- LOMAKEHARJOITUS -->
       <div class="harjoitus">
         <h1>Lomakkeen tarkistusharjoitus</h1>
+        <form id="newsletter">
+          <input type="email" class="input" id="email" name="email" placeholder="Enter your email">
+          <div class="checkbox-text">
+            <label for="agreement">Hyväksynkö ehdot</label>
+            <input type="checkbox" id="agreement" name="agreement" checked>
+          </div>
+          <button id="laheta-btn" class="down" type="submit">Lähetä</button>
+        </form>
       </div>
       <!-- REGEX -->
       <div class="harjoitus">
-        <h1>Regex harjoitus</h1>
+        <ul class="link-list">
+          <li class="link-list-item"><a href="regex.html" class="linkit">Regex Login</a></li>
+        </ul>
       </div>
       <!-- JQuery -->
       <div class="harjoitus">

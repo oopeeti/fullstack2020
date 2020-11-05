@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c4f3b89a16.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/regex.css">
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Julkaisuharjoitus</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav id="navigation">
+      <div class="logo">
+        <a href="https://github.com/oopeeti" target="_blank" class="icon-links">
+          <i class="icon fab fa-github"></i>
+        </a>
+        <p class="nimi">Olli-Pekka</p>
+      </div>
+      <ul class="link-list">
+        <li class="link-list-item"><a href="index.html">Etusivu</a></li>
+        <li class="link-list-item"><a href="harjoitukset.html">Harjoitukset</a></li>
+        <li class="link-list-item"><a href="testialue.html" class="active">Testialue</a></li>
+      </ul>
+    </nav>
+    <div class="main-area">
+      <h1>Regex Registeration</h1>
+      <div class="harjoitus">
+          <form id="regex-registeration">
+              <input type="email" class="input" id="regex-sposti" name="regex-sposti" placeholder="* Sähköposti">
+              <input type="text" class="input" id="regex-etunimi" name="regex-etunimi" placeholder="* Etunimi">
+              <input type="text" class="input" id="regex-sukunimi" name="regex-sukunimi" placeholder="* Sukunimi">
+              <input type="password" class="input" id="regex-salasana" name="regex-salasana" placeholder="* Salasana">
+              <input type="password" class="input" id="regex-salasana-vahvistus" name="regex-salasana" placeholder="* Vahvista Salasana">
+              <p class="sPara"><span class="important">*</span> Pakollinen tieto</p>
+              <div class="checkbox-text">
+                  <div class="kayttoehdot">
+                      <input type="checkbox" id="regex-cb-kayttoehdot"><label>Hyväksyn palvelun <span><a href="#">käyttöehdot</a></span> ja vahvistan lukeneeni ja hyväksyväni <span><a href="#">tietosuojainformaation</a></span><span class="important">*</span></label>
+                  </div>
+                  <div class="markkinointi">
+                      <input type="checkbox" id="regex-cb-markkinointi"><label>Sähköpostiini saa lähettää markkinointiviestejä</label>
+                  </div>
+                  <p class="sPara">Vuokraovi.com:illa on oikeus lähettää ajankohtaista tietoa palvelun uusista ominaisuuksista muutaman kerran vuodessa.</p> 
+              </div>
+              <button class="down" id="register" type="submit">Rekisteröidy</button>
+              <button class="down" id="clean" type="reset">Tyhjennä</button>
+            </form>
+      </div>
+    </div>
+    <footer id="footer">© Olli-Pekka Nikka</footer>
+  </div>
+  <script src="js/regex.js"></script>
+</body>
+</html>

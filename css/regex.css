@@ -1,0 +1,19 @@
+#regex-registeration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    max-width: 50rem;
+}
+
+#kayttoehdot,
+#markkinointi {
+    display: flex;
+}
+
+.input {
+    width: 50%;
+}
+
